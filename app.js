@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const teamSchema = require('./models/teamSchema');
 
-mongoose.connect('mongodb://localhost:27017/roto-nitk', {
+mongoose.connect('mongodb+srv://venkatkumar1810:20011018@cluster0.kttig.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     // useNewUrlParser: true,
     // useCreateIndex: true,
     // useUnifiedTopology: true

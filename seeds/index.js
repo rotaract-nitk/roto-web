@@ -7,7 +7,7 @@ const teamSchema = require('../models/teamSchema');
 const members = require('./coreTeam');
 
 // connect to db
-mongoose.connect('mongodb://localhost:27017/roto-nitk', {
+mongoose.connect('mongodb+srv://venkatkumar1810:20011018@cluster0.kttig.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
