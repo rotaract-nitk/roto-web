@@ -11,6 +11,8 @@ const teamRoutes = require('./routes/team');
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, "public")));
+
 mongoose.connect('mongodb+srv://venkatkumar1810:20011018@cluster0.kttig.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
