@@ -3,16 +3,20 @@ const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const teamSchema = require('./models/teamSchema');
+const ExpressError = require('./utils/ExpressError');
+
+
+// import routes
+const teamRoutes = require('./routes/team');
+
+const app = express();
 
 mongoose.connect('mongodb+srv://venkatkumar1810:20011018@cluster0.kttig.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-    // useNewUrlParser: true,
-    // useCreateIndex: true,
-    // useUnifiedTopology: true
-
-    // useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
+app.use('/', teamRoutes);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -20,7 +24,6 @@ db.once("open", () => {
     console.log("Database connected");
 });
 
-const app = express();
 
 
 app.set('view engine', 'ejs');
@@ -30,50 +33,25 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
 
-app.get('/', async (req, res) => {
-    const teams = await teamSchema.find({});
-    console.log(teams);
-    res.render('team', { teams });
-});
-
-app.get('/campgrounds', async (req, res) => {
-    const campgrounds = await Campground.find({});
-    res.render('campgrounds/index', { campgrounds })
-});
-app.get('/campgrounds/new', (req, res) => {
-    res.render('campgrounds/new');
+app.get('/', (req, res) => {
+    res.render('home.ejs');
 })
 
-// app.post('/campgrounds', async (req, res) => {
-//     const campground = new Campground(req.body.campground);
-//     await campground.save();
-//     res.redirect(`/campgrounds/${campground._id}`)
-// })
 
-// app.get('/campgrounds/:id', async (req, res,) => {
-//     const campground = await Campground.findById(req.params.id)
-//     res.render('campgrounds/show', { campground });
-// });
+app.all('*', (req, res, next) => {
+    next(new ExpressError('Page Not Found', 404));
+    // res.send("404! Page Not Found!");
+});
 
-// app.get('/campgrounds/:id/edit', async (req, res) => {
-//     const campground = await Campground.findById(req.params.id)
-//     res.render('campgrounds/edit', { campground });
-// })
+//error handling
+app.use((err, req, res, next) => {
+    const { statusCode = 500 } = err;
+    // res.status(statusCode).send(message);
+    if (!err.message) err.message = 'Something Went Wrong';
+    res.status(statusCode).render('error', { err });
+})
 
-// app.put('/campgrounds/:id', async (req, res) => {
-//     const { id } = req.params;
-//     const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
-//     res.redirect(`/campgrounds/${campground._id}`)
-// });
-
-// app.delete('/campgrounds/:id', async (req, res) => {
-//     const { id } = req.params;
-//     await Campground.findByIdAndDelete(id);
-//     res.redirect('/campgrounds');
-// })
-
-
-
+// driver 
 app.listen(3000, () => {
-    console.log('Serving on port 3000')
+    console.log('Serving On port 3000');
 })
