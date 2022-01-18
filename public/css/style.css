@@ -16,7 +16,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: var(--font-secondary);
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: var(--color-secondary-dark);
 }
 
@@ -190,7 +190,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-brand {
@@ -211,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle {
     border-color: var(--color-primary);
-    background-color: var(--color-primary);
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -243,13 +243,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: var(--color-primary);
+    background-color: red;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: var(--color-secondary);
+    background-color: red;
 }
 
 @media(min-width:768px) {
@@ -351,6 +351,8 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
 }
 
 section h3.section-subheading {
@@ -886,3 +888,4 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: var(--color-primary);
 }
+.icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}
