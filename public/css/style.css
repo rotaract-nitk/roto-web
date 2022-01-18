@@ -16,12 +16,13 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: var(--font-secondary);
     color: var(--color-secondary-dark);
 }
 
 .text-muted {
-    color: var(--color-muted);
+    color:  var(s--color-muted);
+
 }
 
 .text-primary {
@@ -286,7 +287,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('https://res.cloudinary.com/noo-company/image/upload/v1642480298/Roto/header-bg_dhbuwt.jpg');
     /* background-image: url('{{ site.baseurl }}/img/rotobg.png'); */
     background-position: center center;
     background-repeat: none;
