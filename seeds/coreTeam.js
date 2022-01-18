@@ -37,7 +37,7 @@ module.exports = [
         role: "Vice President",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641995985/Roto/5_fi72ey.png",
         gmail: "amaansiyad24@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/a_maan_siyad_?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/amaan-siyad-a695041b9/",
     },
     {
@@ -45,7 +45,7 @@ module.exports = [
         role: "Joint Secretary",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641995970/Roto/6_inttf0.png",
         gmail: "suraj2shenoy@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/__shinjoy?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/suraj-shenoy-169785201/",
     },
     {
@@ -61,7 +61,7 @@ module.exports = [
         role: "Director Vocational Services",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641995999/Roto/8_quknht.png",
         gmail: "gauravhore@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/callm.eguddu?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/gaurav-hore-2608271b9",
     },
     {
@@ -69,7 +69,7 @@ module.exports = [
         role: "Director Community Services",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641995999/Roto/9_fhkhtt.png",
         gmail: "sarath27e@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/sarath27_e?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/sarath-edaparambil-3a61521b9/",
     },
     {
@@ -85,7 +85,7 @@ module.exports = [
         role: "Director of Youth Services",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641996000/Roto/11_zii1o1.png",
         gmail: "siddharthsoy@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/_born_.confused?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/siddharth-soy-a45361194/",
     },
     {
@@ -101,7 +101,7 @@ module.exports = [
         role: "Director International Affairs",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641996145/Roto/13_jr5qz3.png",
         gmail: "olanpinto@gmail.com",
-        insta: "",
+        insta: "https://instagram.com/shawn.olan?utm_medium=copy_link",
         linkedIn: "https://www.linkedin.com/in/olan-pinto-442a5b192",
     },
     {
@@ -117,7 +117,7 @@ module.exports = [
         role: "Editor",
         imageURL: "https://res.cloudinary.com/noo-company/image/upload/v1641996005/Roto/15_gpyc21.png",
         gmail: "nayanishal@protonmail.com",
-        insta: "",
+        insta: "https://instagram.com/nayanish_l0kesh?utm_medium=copy_link",
         linkedIn: "https://girish-j04.github.io/rotonitk/",
     },
     {
