@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const teamSchema = require('../models/teamSchema');
-const teams = require('../controllers/team');
+const gallerySchema = require('../models/gallerySchema');
+const gallery = require('../controllers/gallery');
 const catchAsync = require('../utils/catchAsync');
 
 
@@ -9,7 +9,7 @@ const catchAsync = require('../utils/catchAsync');
 // this route is for
 // .display all team members
 // .if added new team member POST req
-router.route('/').get(catchAsync(teams.index));
+router.route('/').get(catchAsync(gallery.index));
 // .post() complete this post request
 
 
@@ -23,7 +23,7 @@ router.route('/').get(catchAsync(teams.index));
 // if updated a team member details sent - put req
 // to delete a team member - delete req
 
-router.route('/:id')
+//router.route('/:id')
 // .get(catchAsync(teams.showTeamMember))
 // .put()
 // .delete
