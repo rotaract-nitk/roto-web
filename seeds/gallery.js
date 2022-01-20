@@ -1,11 +1,11 @@
 module.exports = [
     {
         name: "img1",
-        imageURL: "https://res.cloudinary.com/djlnz87ow/image/upload/v1642651885/rotoWebsite/Copy_of_IMG_1629_ibrioq.heic"
+        imageURL: "https://res.cloudinary.com/djlnz87ow/image/upload/v1642654635/rotoWebsite/Copy_of_IMG_1629_im6l7g.jpg"
     },
     {
         name: "img2",
-        imageURL: "https://res.cloudinary.com/djlnz87ow/image/upload/v1642651881/rotoWebsite/IMG_1625_xsaxrm.heic"
+        imageURL: "https://res.cloudinary.com/djlnz87ow/image/upload/v1642654589/rotoWebsite/IMG_1625_melabc.jpg"
     },
     {
         name: "img3",
