@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head',{siteUrl : siteData.siteUrl}); %>
+
+  <body>
+    <%- include('header'); %>
+      <%- include('about'); %>
+        <%- include('contact'); %>
+          <%- include('footer',{social : siteData.social}); %>
+            <%- include('js'); %>
+  </body>
+
+</html>
