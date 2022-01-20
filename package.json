@@ -1,24 +1,20 @@
 {
-  "name": "roto-web",
+  "name": "roto_web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.2",
-    "index": "^0.4.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ritvik0012/Roto-Web.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ritvik0012/Roto-Web/issues"
-  },
-  "homepage": "https://github.com/ritvik0012/Roto-Web#readme"
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6"
+  }
 }
