@@ -6,8 +6,8 @@ const methodOverride = require('method-override');
 
 
 // import routes
-// const homePageRoutes = require('./routes/mainroute');
-const events = require('./routes/event');
+const homePageRoutes = require('./routes/mainroute');
+//const events = require('./routes/event');
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
 
-app.use('/', events);
+app.use('/', homePageRoutes);
 
 
 app.listen(3000, () => {

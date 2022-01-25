@@ -1,17 +1,40 @@
-<div class="row">
-    <% for( let i = 0; i < events.length; i++ ) { %>
-    <div class="col-sm-4">
-        <div class="event-title">
-            <h1><%= events[i].eventTitle %></h1>
-        </div>
-        <div class="event-description">
-            <h3><%= events[i].description %></h3>
-        </div>
-        <div class="event-thumnbnail">
-            <a href="/<%= events[i]._id %>"
-                ><img src="<%= events[i].eventThumbnail %> "
-            /></a>
-        </div>
+
+  <body>
+<section id="portfolio">
+    <div class="container">
+
+    <div class="col-lg-12 text-center">
+        <h2 class="section-heading" >
+            Events and Projects
+        </h2>
+        <h3 class="section-subheading text-muted">What we do to make a difference in this world.</h3>
     </div>
-    <% } %>
+    <div class="row">
+    <% for( let i = 0; i < events.length; i++ ) { %>
+        
+    <div class="col-md-4 col-sm-6 portfolio-item">
+        
+            <a href="/events/<%= events[i]._id %>" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="<%= events[i].eventThumbnail %> " class="img-responsive img-centered" alt=""/>
+            </a>
+        
+   
+    <div class="portfolio-caption">
+        <h4 style="font-weight: 700;"><%= events[i].eventTitle%></h4>
+        <!-- TODO: FIX THIS CENTERING OF SUBTITILE -->
+        <!-- <p class="text-muted portfolio-grid-subtitle">Speak Up</p> -->
+    </div>
+   
+    </div>
+    <% } %> 
 </div>
+
+</div>
+
+</section>
+
