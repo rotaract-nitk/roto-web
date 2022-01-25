@@ -7,6 +7,7 @@ const methodOverride = require('method-override');
 
 // import routes
 const homePageRoutes = require('./routes/mainroute');
+//const events = require('./routes/event');
 
 const app = express();
 
