@@ -761,5 +761,20 @@ a{text-decoration: none!important}
     .w-100 {
         width: 100%!important;
     }
+   
+    
+}
+
+@media (max-width: 768px){
+.col-sm-4 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+@media (max-width: 576px) {
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
     
 }
