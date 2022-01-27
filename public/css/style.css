@@ -155,7 +155,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px
+        border-radius: 3px;
+        background-color: red
+}
     }
 
     .navbar-default.navbar-shrink {
@@ -166,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em
     }
-}
+
 @media (max-width:1199px) {
     .nav{
         background-color: #222;
@@ -754,4 +756,10 @@ a{text-decoration: none!important}
     .nav{
         display: block;
     }
+}
+@media (max-width:1200px) {
+    .w-100 {
+        width: 100%!important;
+    }
+    
 }
