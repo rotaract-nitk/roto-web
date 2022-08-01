@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-4">
+        <div class="event-title">
+            <h1><%= events.eventTitle %></h1>
+        </div>
+        <div class="event-description">
+            <h3><%= events.eventDescription %></h3>
+        </div>
+        <div>
+            <% for( let j = 0; j < events.activity.length; j++ ) { %>
+            <div class="activity-title">
+                <h2><%= events.activity[j].activityTitle %></h2>
+            </div>
+            <div class="activity-description">
+                <p><%= events.activity[j].description %></p>
+            </div>
+            <div class="activity-image">
+                <img src="<%= events.activity[j].imageURL %>" alt="" />
+            </div>
+            <div class="activity-date">
+                <h5><%= events.activity[j].Date %></h5>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>
