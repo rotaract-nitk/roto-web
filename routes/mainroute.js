@@ -10,6 +10,7 @@ router.get('/events', function(req, res) {
         events.index(req,res);
     });
 router.get('/events/:id', function(req, res) {
+        
         events.showEvent(req,res);
     });
 
